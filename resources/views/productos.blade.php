@@ -1,13 +1,13 @@
 @extends('layouts.users')
 @section('user-content')
 <main class="main">
-    <div class="banner banner-cat" style="background-image: url('assets/images/banners/banner-top.jpg');">
+    <div class="banner banner-cat" style="background-image: url('/assets/images/banners/banner-top.jpg');">
         <div class="banner-content container">
             <h2 class="banner-subtitle">check out over <span>200+</span></h2>
             <h1 class="banner-title">
                 INCREDIBLE deals
             </h1>
-            <a href="#" class="btn btn-dark">Shop Now</a>
+            <a href="#" class="btn btn-product" style="color: #fff;">Shop Now</a>
         </div><!-- End .banner-content -->
     </div><!-- End .banner -->
 
@@ -106,7 +106,7 @@
 
                     <div class="widget">
                         <h3 class="widget-title">
-                            <a data-toggle="collapse" href="#widget-body-2" role="button" aria-expanded="true" aria-controls="widget-body-2">Price</a>         
+                            <a data-toggle="collapse" href="#widget-body-2" role="button" aria-expanded="true" aria-controls="widget-body-2">Precio</a>         
                         </h3>
 
                         <div class="collapse show" id="widget-body-2">
@@ -119,7 +119,6 @@
                                     <input type="hidden" name="pmajor" id="pmajor" value="{{$pmajor}}">
                                     <div class="filter-price-action">
                                         <button id="btn-price" type="submit" class="btn btn-primary">Filtrar</button>
-
                                         <div class="filter-price-text">
                                             <span id="filter-price-range"></span>
                                         </div><!-- End .filter-price-text -->

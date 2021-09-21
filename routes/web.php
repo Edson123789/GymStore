@@ -79,3 +79,8 @@ Auth::routes();
 
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+Route::get('/nosotros', function () {
+    return view('nosotros');
+})->name('nosotros');
