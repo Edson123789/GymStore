@@ -6,27 +6,27 @@
         <div class="home-slide">
             <div class="owl-lazy slide-bg" data-src="assets/images/slider/slide-1.jpg"></div>
             <div class="home-slide-content text-white">
-                <h3>Obten hasta <span>20%</span> en</h3>
-                <h1>Todo Pesas y mancuernas</h1>
-                <p>Solo durante dos días.</p>
+                <h3>Obten <span>60%</span> en</h3>
+                <h1>Todos Smarthphones</h1>
+                <p>Solo durante dos dias.</p>
                 <a href="{{route('productos')}}" class="btn btn-dark">Ir a comprar</a>
             </div><!-- End .home-slide-content -->
         </div><!-- End .home-slide -->
         <div class="home-slide">
             <div class="owl-lazy slide-bg" data-src="assets/images/slider/slide-2.jpg"></div>
             <div class="home-slide-content text-white">
-                <h3>Accesorios Fitness <span>Exclusivos</span></h3>
-                <h1>Nuevos diseños</h1>
-                <p>Variedad de productos.</p>
+                <h3>Aprovecha <span>60%</span> de</h3>
+                <h1>Descuento</h1>
+                <p>En todo Eletro.</p>
                 <a href="{{route('productos')}}" class="btn btn-dark">Ir a comprar</a>
             </div><!-- End .home-slide-content -->
         </div><!-- End .home-slide -->
         <div class="home-slide">
             <div class="owl-lazy slide-bg" data-src="assets/images/slider/slide-3.jpg"></div>
             <div class="home-slide-content text-white">
-                <h3>Sets <span>Completos</span> de GYM en casa</h3>
-                <h1>Totalmente equipados</h1>
-                <p>y en la comodidad de tu hogar.</p>
+                <h3>Get up to <span>60%</span> off</h3>
+                <h1>Summer Sale</h1>
+                <p>Limited items available at this price.</p>
                 <a href="{{route('productos')}}" class="btn">Ir a comprar</a>
             </div><!-- End .home-slide-content -->
         </div><!-- End .home-slide -->
@@ -230,7 +230,7 @@
             <div class="row">
                 <div class="col-lg-6 offset-lg-3">
                     <div class="section-heading mt-2">
-                        <h2>Choose <em>Program</em></h2>
+                        <h2>Nuestros <em>Productos</em></h2>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -240,8 +240,8 @@
                                 <img src="assets/images/features-first-icon.png" alt="First One">
                             </div>
                             <div class="right-content">
-                                <h4>Basic Fitness</h4>
-                                <p>Please do not re-distribute this template ZIP file on any template collection website. This is not allowed.</p>
+                                <h4>Garantía</h4>
+                                <p>Tu producto llegará según lo acordado.</p>
                             </div>
                         </li>
                         <li class="feature-item">
@@ -249,8 +249,8 @@
                                 <img src="assets/images/features-first-icon.png" alt="second one">
                             </div>
                             <div class="right-content">
-                                <h4>New Gym Training</h4>
-                                <p>If you wish to support TemplateMo website via PayPal, please feel free to contact us. We appreciate it a lot.</p>
+                                <h4>Soporte</h4>
+                                <p>En línea 24/7 para resolver cualquier duda.</p>
 
                             </div>
                         </li>
@@ -263,8 +263,8 @@
                                 <img src="assets/images/features-first-icon.png" alt="fourth muscle">
                             </div>
                             <div class="right-content">
-                                <h4>Advanced Muscle Course</h4>
-                                <p>You may want to browse through <a rel="nofollow" href="https://templatemo.com/tag/digital-marketing" target="_parent">Digital Marketing</a> or <a href="https://templatemo.com/tag/corporate">Corporate</a> HTML CSS templates on our website.</p>
+                                <h4>Escríbenos</h4>
+                                <p>Cualquier duda estamos dispuestos a atenderte.</p>
 
                             </div>
                         </li>
@@ -273,8 +273,8 @@
                                 <img src="assets/images/features-first-icon.png" alt="training fifth">
                             </div>
                             <div class="right-content">
-                                <h4>Yoga Training</h4>
-                                <p>This template is built on Bootstrap v4.3.1 framework. It is easy to adapt the columns and sections.</p>
+                                <h4>Nuestros Clientes</h4>
+                                <p>Nos recomiendan, gracias por su preferencia!</p>
 
                             </div>
                         </li>
@@ -293,7 +293,7 @@
                 <h3 class="title">LOS MÁS VENDIDOS</h3>
                 <div class="home-featured-products owl-carousel owl-theme owl-dots-top">
 
-                    @foreach ($mejor as $item)
+                    @foreach ($newest as $item)
                     <div class="product-default">
                         <figure>
                             <a href="{{route('producto',$item->slug)}}">
@@ -343,55 +343,7 @@
                     </div>
                     @endforeach
 
-                    @foreach ($hot as $item)
-                    <div class="product-default">
-                        <figure>
-                            <a href="{{route('producto',$item->slug)}}">
-                                <img src="{{asset('poster/'. $item->poster)}}">
-                            </a>
-                        </figure>
-                        <div class="product-details">
-                            <div class="ratings-container">
-                                <div class="product-ratings">
-                                    <span class="ratings" style="width:100%"></span><!-- End .ratings -->
-                                    <span class="tooltiptext tooltip-top"></span>
-                                </div><!-- End .product-ratings -->
-                            </div><!-- End .product-container -->
-                            <h2 class="product-title" style="text-align: center;">
-                                <a href="{{route('producto',$item->slug)}}" style="white-space: normal">{{$item->titulo}}</a>
-                            </h2>
-                            <div class="ratings-container">
-                                <div class="product-ratings">
-                                    <span class="ratings" style="width:100%"></span>
-                                    <span class="tooltiptext tooltip-top"></span>
-                                </div>
-                            </div>
-                            <div class="price-box">
-                                <span class="product-price">
-                                    @if ($config->tipo_moneda == 'Soles')
-                                    S/.
-                                    @elseif($config->tipo_moneda == 'Dolares')
-                                    $
-                                    @endif
 
-                                    {{$item->precio_ahora}}</span>
-                                <del>{{$item->precio_antes}}</del>
-                            </div>
-
-                            <div class="product-action">
-                                <a href="#" class="btn-icon-wish"><i class="icon-heart"></i></a>
-
-                                <form action="{{route('agregar.carrito')}}" method="POST" style="margin:0 !important">
-                                    @csrf
-                                    <input type="hidden" name="cantidad" value="1">
-                                    <input type="hidden" value="{{$item->id}}" name="idproducto">
-                                    <button class="btn-icon btn-add-cart" type="submit"><i class="icon-bag"></i>AL
-                                        CARRITO</button>
-                                </form>
-                            </div>
-                        </div><!-- End .product-details -->
-                    </div>
-                    @endforeach
 
                 </div>
                 <div class="mb-3"></div>
@@ -464,7 +416,7 @@
             <div class="row">
                 <div class="col-lg-10 offset-lg-1">
                     <div class="cta-content">
-                        <h2 style="color: white; font-size: xx-large;">Don’t think, begin today!</h2>
+                        <h2 style="color: white; font-size: xx-large;">Don’t!</h2>
                         <p>Ut consectetur, metus sit amet aliquet placerat, enim est ultricies ligula, sit amet dapibus odio augue eget libero. Morbi tempus mauris a nisi luctus imperdiet.</p>
                     </div>
                 </div>
@@ -475,6 +427,162 @@
 
     <div class="container text-center my-3">
         <div class="container mt-4">
+            <div class="row">
+                <div class="col-lg-9">
+                    <div class="row">
+
+
+                        <div class="col-6 col-md-4">
+                            <div class="product-column">
+                                <h3 class="title">Recomendado</h3>
+
+                                @foreach ($hot as $item)
+                                <div class="product-default left-details product-widget mb-3">
+                                    <figure>
+                                        <a href="{{route('producto',$item->slug)}}">
+                                            <img src="{{asset('poster/'.$item->poster)}}">
+                                        </a>
+                                    </figure>
+                                    <div class="product-details">
+                                        <h2 class="product-title">
+                                            <a href="{{route('producto',$item->slug)}}">{{$item->titulo}}</a>
+                                        </h2>
+                                        <div class="ratings-container">
+                                            <div class="product-ratings">
+                                                <span class="ratings" style="width:100%"></span><!-- End .ratings -->
+                                                <span class="tooltiptext tooltip-top"></span>
+                                            </div><!-- End .product-ratings -->
+                                        </div><!-- End .product-container -->
+                                        <div class="price-box">
+                                            <span class="product-price">
+                                                @if ($config->tipo_moneda == 'Soles')
+                                                S/.
+                                                @elseif($config->tipo_moneda == 'Dolares')
+                                                $
+                                                @endif
+                                                {{$item->precio_ahora}}</span>
+                                            <del>{{$item->precio_antes}}</del>
+                                        </div><!-- End .price-box -->
+                                    </div><!-- End .product-details -->
+                                </div>
+                                @endforeach
+                            </div><!-- End .product-column -->
+                        </div><!-- End .col-md-4 -->
+                    </div><!-- End .row -->
+
+                    <div class="mb-3"></div><!-- margin -->
+
+                </div><!-- End .col-lg-9 -->
+
+                <aside class="sidebar-home col-lg-3 order-lg-first">
+                    <!-- <div class="side-menu-container">
+                    <h2>MENÚ</h2>
+
+                    <nav class="side-nav">
+                        <ul class="menu menu-vertical sf-arrows">
+                            <li class="active"><a href="{{route('inicio')}}"><i class="icon-home"></i>Inicio</a></li>
+                            <li><a><i class="icon icon-heart"></i>Ofertas</a></li>
+                            <li><a href="{{route('contacto')}}"><i class="icon icon-envolope"></i>Contacto</a></li>
+
+                            <li><a href="{{route('best_seller')}}"><i class="icon icon-star"></i>Lo mas vendido</a></li>
+                            <li><a href="https://1.envato.market/DdLk5" target="_blank"><i class="icon-star-empty"></i>Buy devctheme!</a></li>
+                        </ul>
+                    </nav>
+                </div> -->
+                    <?php
+
+                    $config = DB::table('configuraciones')
+                        ->first();
+                    ?>
+                    <div class="widget widget-banners">
+                        <div class="widget-banners-slider owl-carousel owl-theme">
+                            <div class="banner banner-image">
+                                <a href="#">
+                                    <img src="{{asset('config/'.$config->banner_inicio_dos)}}" alt="banner">
+                                </a>
+                            </div><!-- End .banner -->
+
+                            <div class="banner banner-image">
+                                <a href="#">
+                                    <img src="{{asset('config/'.$config->banner_inicio_uno)}}" alt="banner">
+                                </a>
+                            </div><!-- End .banner -->
+                        </div><!-- End .banner-slider -->
+                    </div><!-- End .widget -->
+
+                    <div class="widget widget-newsletters">
+                        <h3 class="widget-title">Subscribete</h3>
+                        <p>Para poder recibir los mejores descuentos. </p>
+                        <form action="#">
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="wemail">
+                                <label for="wemail"><i class="icon-envolope"></i>Correo electrónico</label>
+                            </div><!-- Endd .form-group -->
+                            <input type="submit" class="btn btn-block" value="Registrar correo">
+                        </form>
+                    </div><!-- End .widget -->
+
+                    <div class="widget widget-testimonials">
+                        <div class="widget-testimonials-slider owl-carousel owl-theme">
+                            <div class="testimonial">
+                                <div class="testimonial-owner">
+                                    <figure>
+                                        <img src="assets/images/clients/client1.png" alt="client">
+                                    </figure>
+
+                                    <div>
+                                        <h4 class="testimonial-title">Juan Gómez</h4>
+                                        <span>Cliente</span>
+                                    </div>
+                                </div><!-- End .testimonial-owner -->
+
+                                <blockquote>
+                                    <p>Productos de calidad y de entrega inmediata 100% recomendado.</p>
+                                </blockquote>
+                            </div><!-- End .testimonial -->
+
+                            <div class="testimonial">
+                                <div class="testimonial-owner">
+                                    <figure>
+                                        <img src="assets/images/clients/client2.png" alt="client">
+                                    </figure>
+
+                                    <div>
+                                        <h4 class="testimonial-title">Pablo Ramos</h4>
+                                        <span>Cliente</span>
+                                    </div>
+                                </div><!-- End .testimonial-owner -->
+
+                                <blockquote>
+                                    <p>Excelente atención, acabo de recibir mi producto y todo conforme!</p>
+                                </blockquote>
+                            </div><!-- End .testimonial -->
+                        </div><!-- End .testimonials-slider -->
+                    </div><!-- End .widget -->
+
+                    <!-- <div class="widget">
+                    <div class="widget-posts-slider owl-carousel owl-theme">
+                        <div class="post">
+                            <span class="post-date">01- Jun -2018</span>
+                            <h4 class="post-title"><a href="#">Fashion News</a></h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur elitad adipiscing Cras non placerat mi. </p>
+                        </div>
+
+                        <div class="post">
+                            <span class="post-date">22- May -2018</span>
+                            <h4 class="post-title"><a href="#">Shopping News</a></h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur elitad adipiscing Cras non plasasyi. </p>
+                        </div>
+
+                        <div class="post">
+                            <span class="post-date">13- May -2018</span>
+                            <h4 class="post-title"><a href="#">Fashion News</a></h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur elitad adipiscing Cras non placerat. </p>
+                        </div>
+                    </div>
+                </div> -->
+                </aside><!-- End .col-lg-3 -->
+            </div><!-- End .row -->
             <div class="row">
                 <div class="col-sm-6 col-md-4">
                     <div class="feature-box feature-box-simple text-center">

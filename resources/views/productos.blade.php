@@ -3,11 +3,11 @@
 <main class="main">
     <div class="banner banner-cat" style="background-image: url('/assets/images/banners/banner-top.jpg');">
         <div class="banner-content container">
-            <h2 class="banner-subtitle">check out over <span>200+</span></h2>
+            <h2 class="banner-subtitle">Gimmasios para <span>casa</span></h2>
             <h1 class="banner-title">
-                INCREDIBLE deals
+                Discos, Barras, Mancuernas
             </h1>
-            <a href="#" class="btn btn-product" style="color: #fff;">Shop Now</a>
+            <a href="{{route('productos')}}" class="btn btn-product" style="color: #fff;">Comprar ahora</a>
         </div><!-- End .banner-content -->
     </div><!-- End .banner -->
 
@@ -95,7 +95,7 @@
                             <div class="widget-body">
                                 <ul class="cat-list">
                                     @foreach ($categorias as $item)
-                                        <li><a href="{{route('productos.categoria',strtolower($item->titulo))}}"><i class="{{$item->icono}}"></i> {{$item->titulo}}</a></li>
+                                        <li><a style="text-decoration: none;" href="{{route('productos.categoria',strtolower($item->titulo))}}"><i class="{{$item->icono}}"></i> {{$item->titulo}}</a></li>
                                     @endforeach
                                     
                                     
@@ -104,7 +104,7 @@
                         </div><!-- End .collapse -->
                     </div><!-- End .widget -->
 
-                    <div class="widget">
+                    <!-- <div class="widget">
                         <h3 class="widget-title">
                             <a data-toggle="collapse" href="#widget-body-2" role="button" aria-expanded="true" aria-controls="widget-body-2">Precio</a>         
                         </h3>
@@ -113,20 +113,20 @@
                             <div class="widget-body">
                                 {!! Form::open(array('url'=>'productos','method'=>'GET','autocomplete'=>'off','role'=>'search'))!!}
                                     <div class="price-slider-wrapper">
-                                        <div id="price-slider"></div><!-- End #price-slider -->
-                                    </div><!-- End .price-slider-wrapper -->
+                                        <div id="price-slider"></div>
+                                    </div>
                                     <input type="hidden" name="pminor" id="pminor" value="{{$pminor}}">
                                     <input type="hidden" name="pmajor" id="pmajor" value="{{$pmajor}}">
                                     <div class="filter-price-action">
                                         <button id="btn-price" type="submit" class="btn btn-primary">Filtrar</button>
                                         <div class="filter-price-text">
                                             <span id="filter-price-range"></span>
-                                        </div><!-- End .filter-price-text -->
-                                    </div><!-- End .filter-price-action -->
+                                        </div>
+                                    </div>
                                 {{Form::close()}}
-                            </div><!-- End .widget-body -->
-                        </div><!-- End .collapse -->
-                    </div><!-- End .widget -->
+                            </div>
+                        </div>
+                    </div> -->
 
                     
 
@@ -140,41 +140,16 @@
                                 <ul class="cat-list">
                                     <li>
                                         {!! Form::open(array('url'=>'productos','method'=>'GET','autocomplete'=>'off','role'=>'search'))!!}
-                                            <input type="hidden" name="marca" value="adidas">
-                                            <button type="submit" class="btn-marca">Adidas</button>
+                                            <input type="hidden" name="marca" value="banco">
+                                            <button type="submit" class="btn-marca">Banco</button>
                                         {{Form::close()}}
-                                    </li>
-                                    <li>
-                                        {!! Form::open(array('url'=>'productos','method'=>'GET','autocomplete'=>'off','role'=>'search'))!!}
-                                            <input type="hidden" name="marca" value="xiaomi">
-                                            <button type="submit" class="btn-marca">Xiaomi</button>
-                                        {{Form::close()}}
-                                    </li>
-                                    <li>
-                                        {!! Form::open(array('url'=>'productos','method'=>'GET','autocomplete'=>'off','role'=>'search'))!!}
-                                            <input type="hidden" name="marca" value="caterpillar">
-                                            <button type="submit" class="btn-marca">Caterpillar</button>
-                                        {{Form::close()}}
-                                    </li>
-                                    <li>
-                                        {!! Form::open(array('url'=>'productos','method'=>'GET','autocomplete'=>'off','role'=>'search'))!!}
-                                            <input type="hidden" name="marca" value="acer">
-                                            <button type="submit" class="btn-marca">Acer</button>
-                                        {{Form::close()}}
-                                    </li>
-                                    <li>
-                                        {!! Form::open(array('url'=>'productos','method'=>'GET','autocomplete'=>'off','role'=>'search'))!!}
-                                            <input type="hidden" name="marca" value="huawei">
-                                            <button type="submit" class="btn-marca">Huawei</button>
-                                        {{Form::close()}}
-                                    </li>
-                                    
+                                    </li>                                  
                                 </ul>
-                            </div><!-- End .widget-body -->
-                        </div><!-- End .collapse -->
-                    </div><!-- End .widget -->
+                            </div>
+                        </div>
+                    </div>
 
-                    <div class="widget">
+                    <!-- <div class="widget">
                         <h3 class="widget-title">
                             <a data-toggle="collapse" href="#widget-body-6" role="button" aria-expanded="true" aria-controls="widget-body-6">Color</a>
                         </h3>
@@ -207,9 +182,9 @@
                                         <a href="#" style="background-color: #7d5a3c;"></a>
                                     </li>
                                 </ul>
-                            </div><!-- End .widget-body -->
-                        </div><!-- End .collapse -->
-                    </div><!-- End .widget -->
+                            </div>
+                        </div>
+                    </div> -->
 
                     <div class="widget widget-featured">
                         <h3 class="widget-title">DE TU INTERÉS</h3>
@@ -254,11 +229,11 @@
                         </div><!-- End .widget-body -->
                     </div><!-- End .widget -->
 
-                    <div class="widget widget-block">
+                    <!-- <div class="widget widget-block">
                         <h3 class="widget-title">Custom HTML Block</h3>
                         <h5>This is a custom sub-title.</h5>
                         <p>Lorem ipsum dolor sit amet, consectetur elitad adipiscing Cras non placerat mi. </p>
-                    </div><!-- End .widget -->
+                    </div> -->
                 </div><!-- End .sidebar-wrapper -->
             </aside><!-- End .col-lg-3 -->
         </div><!-- End .row -->

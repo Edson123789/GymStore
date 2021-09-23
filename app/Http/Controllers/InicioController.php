@@ -17,7 +17,7 @@ class InicioController extends Controller
         try {
             $best = DB::table('producto as p')
             ->orderby('num_ventas','desc')
-            ->take(3)
+            ->take(4)
             ->get();
 
             $newest = DB::table('producto')
@@ -27,17 +27,17 @@ class InicioController extends Controller
 
             $hot = DB::table('producto')
             ->orderby('precio_ahora','asc')
-            ->take(3)
+            ->take(4)
             ->get();
 
             $mejor = DB::table('producto')
             ->orderby('precio_ahora','desc')
-            ->take(3)
+            ->take(4)
             ->get();
 
             $reco = DB::table('producto')
             ->orderby('titulo','asc')
-            ->take(3)
+            ->take(4)
             ->get();
 
             $config = DB::table('configuraciones')

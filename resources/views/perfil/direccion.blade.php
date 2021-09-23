@@ -31,7 +31,7 @@
                         </div>
                         @endif
 
-                        <div class="col-lg-12 form-group">
+                        <!-- <div class="col-lg-12 form-group">
                             <label><b>Dirección</b></label>
                             <textarea name="direccion" class="form-control" style="min-height: 100px !important;" placeholder="Ingrese su nueva dirección"></textarea>
                         </div>
@@ -42,6 +42,10 @@
                                     <option value="{{$item->name}}">{{$item->name}}</option>
                                 @endforeach
                             </select>
+                        </div> -->
+                        <div class="col-lg-3 col-md-6 form-group">
+                            <label><b>País</b></label>
+                            <input type="text" class="form-control" placeholder="País" name="pais">
                         </div>
                         <div class="col-lg-3 col-md-6 form-group">
                             <label><b>Región</b></label>

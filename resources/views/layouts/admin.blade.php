@@ -43,8 +43,9 @@
 			<div class="sidebar-content">
 				<div class="sidebar-user" style="background:#b0b0b0; color: white">
 					<img src="{{asset('config/'.$config->logo)}}" class="img-fluid  mb-2" alt="Linda Miller" style="width: 80%;"/>
-					<div class="font-weight-bold">{{auth()->user()->email}}</div>
-					<small>MODO ADMINISTRADOR</small>
+					<!-- <div class="font-weight-bold">{{auth()->user()->email}}</div> -->
+					<br>
+					<small style="color: black;">MODO ADMINISTRADOR</small>
 				</div>
 
 				<ul class="sidebar-nav">

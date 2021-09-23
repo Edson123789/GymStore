@@ -9,7 +9,6 @@
                 <h1 class="header-title">
                     <i class="fas fa-kaaba"></i> Mis productos
                 </h1>
-                <p class="header-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, iste!.</p>
             </div>
 
             <div class="row">
@@ -50,7 +49,7 @@
                                 <div class="col-lg-2">
                                     <div class="btn-group">
                                         <button type="button" class="btn mb-1 btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Optiones
+                                        Opciones
                                         </button>
                                         <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 31px, 0px);">
                                             <a class="dropdown-item" href="{{route('create.producto')}}"><i class="fas fa-archive"></i> Registrar producto</a>
@@ -76,7 +75,7 @@
                                     <td>
                                         <img src="{{asset('poster/'.$item->poster)}}" width="48" height="48" class=" mr-2" alt="Avatar"> {{$item->titulo}}
                                     </td>
-                                    <td><b>USD</b> {{$item->precio_ahora}}</td>
+                                    <td><b>S/.</b> {{$item->precio_ahora}}</td>
                                     <td>{{$item->stock}} unidades</td>
                                     <td>
                                         <div class="btn-group">

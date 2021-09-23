@@ -129,7 +129,7 @@
                             <a class="nav-link" id="product-tab-tags" data-toggle="tab" href="#product-tags-content" role="tab" aria-controls="product-tags-content" aria-selected="false">Tags</a>
                         </li> --}}
                         <li class="nav-item">
-                            <a class="nav-link" id="product-tab-reviews" data-toggle="tab" href="#product-reviews-content" role="tab" aria-controls="product-reviews-content" aria-selected="false">Resenas</a>
+                            <a class="nav-link" id="product-tab-reviews" data-toggle="tab" href="#product-reviews-content" role="tab" aria-controls="product-reviews-content" aria-selected="false">Reseñas</a>
                         </li>
                     </ul>
                     <div class="tab-content">
@@ -206,7 +206,7 @@
                 <div class="sidebar-wrapper">
                     <div class="widget widget-brand">
                         <a href="#">
-                            <img src="{{asset('assets/images/logo-black.png')}}" alt="brand name">
+                            <img src="{{asset('assets/images/logo-red.png')}}" alt="brand name">
                         </a>
                     </div><!-- End .widget -->
 
@@ -214,7 +214,7 @@
                         <ul>
                             <li>
                                 <i class="icon-shipping"></i>
-                                <h4>ENVIO<br>GRATIS</h4>
+                                <h4>ENVÍOS A <br>DOIMICILIO</h4>
                             </li>
                             <li>
                                 <i class="icon-us-dollar"></i>

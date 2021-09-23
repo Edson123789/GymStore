@@ -327,6 +327,47 @@ a:focus {
     }
 }
 
+#features {
+    /* margin-bottom: 80px; */
+    background-color: rgb(182, 178, 178);
+    background-size: auto;
+}
+
+.feature-item {
+    display: inline-block;
+    /* margin-bottom: 60px; */
+}
+
+.feature-item .left-icon img {
+    float: left;
+    margin-right: 30px;
+}
+
+.feature-item .right-content {
+    display: inline;
+    border-radius: 5px;
+}
+
+.feature-item .right-content h4 {
+    margin-top: 2px;
+    /* margin-bottom: 7px; */
+    letter-spacing: 0.25px;
+    color: #232d39;
+    font-size: 19px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+#call-to-action {
+    padding: 120px 0px;
+    background-image: url('/assets/images/banners/banner-4.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+
 .container-fluid {
     width: 100%;
     margin-right: auto;
@@ -335,7 +376,7 @@ a:focus {
 
 .page-wrapper {
     position: relative;
-    transition: transform .35s
+    transition: transform .35s;
 }
 
 .mmenu-active .page-wrapper {
@@ -407,7 +448,7 @@ a:focus {
 }
 
 .header {
-    background-color: #e8a207
+    background-color: #e02007
 }
 
 .header .container,
@@ -567,11 +608,12 @@ a:focus {
     display: flex;
     align-items: center;
     padding: 2px 9px;
-    white-space: nowrap
+    white-space: nowrap;
 }
 
 .header-menu a {
-    color: inherit
+    color: inherit;
+    text-decoration: none;
 }
 
 .header-menu a:hover,
@@ -900,7 +942,7 @@ a:focus {
 
 .cart-dropdown .btn-remove:hover,
 .cart-dropdown .btn-remove:focus {
-    color: #e8a207;
+    color: #e02007;
     box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3)
 }
 
@@ -1078,7 +1120,7 @@ a:focus {
     border-radius: 0 20px 20px 0;
     background: transparent;
     background-color: transparent;
-    color: #606669;
+    color: #f8f8fa;
     font-size: 1.5rem;
     font-weight: 400;
     line-height: 1;
@@ -1086,13 +1128,14 @@ a:focus {
 }
 
 .header-search .btn i::before {
-    margin: 0
+    margin: 0;
+    color: #0c0c0c;
 }
 
 .header-search .btn:hover,
 .header-search .btn:focus {
     background-color: transparent;
-    color: #e8a207
+    color: #e02007
 }
 
 .header-contact {
@@ -1626,8 +1669,8 @@ a:focus {
 .menu>li:hover>a,
 .menu>li.show>a,
 .menu>li.active>a {
-    border-color: #e8a207;
-    color: #e8a207
+    border-color: #e02007;
+    color: #e02007
 }
 
 .menu.sf-arrows>li.show>a.sf-with-ul::before {
@@ -1801,14 +1844,14 @@ a:focus {
 .menu.menu-vertical>li:hover,
 .menu.menu-vertical>li.show,
 .menu.menu-vertical>li.active {
-    background-color: #e8a207
+    background-color: #e02007
 }
 
 .menu.menu-vertical>li:hover>a,
 .menu.menu-vertical>li.show>a,
 .menu.menu-vertical>li.active>a {
-    border-color: #e8a207;
-    background-color: #e8a207;
+    border-color: #e02007;
+    background-color: #e02007;
     color: #fff
 }
 
@@ -1972,13 +2015,13 @@ a:focus {
 
 .mobile-menu li a:hover,
 .mobile-menu li a:focus {
-    color: #e8a207;
+    color: #e02007;
     text-decoration: none
 }
 
 .mobile-menu li.open>a,
 .mobile-menu li.active>a {
-    color: #e8a207
+    color: #e02007
 }
 
 .mobile-menu li ul {
@@ -2056,7 +2099,7 @@ a:focus {
     left: 0;
     padding-top: .7rem;
     padding-bottom: .7rem;
-    background-color: #e8a207;
+    background-color: #e02007;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     z-index: 1040;
     -webkit-animation-duration: .4s;
@@ -2079,7 +2122,7 @@ a:focus {
 .sticky-header.fixed .menu>li:hover>a,
 .sticky-header.fixed .menu>li.show>a,
 .sticky-header.fixed .menu>li.active>a {
-    color: #e8a207;
+    color: #e02007;
     background-color: #fff
 }
 
@@ -2208,11 +2251,15 @@ a:focus {
 
 .footer .links li {
     position: relative;
-    margin-bottom: .8rem
+    margin-bottom: .8rem;
+}
+
+.footer .links li a {
+    text-decoration: none;
 }
 
 .footer a {
-    color: inherit
+    color: inherit;
 }
 
 .footer a:hover,
@@ -2295,7 +2342,7 @@ a:focus {
 
 .widget-newsletter .btn {
     border-color: #e02007;
-    background-color: #e8a207;
+    background-color: #e02007;
     border-radius: 0;
     color: #fff;
     display: inline-block;
@@ -2947,7 +2994,7 @@ a:focus {
     opacity: 0;
     height: unset;
     padding: 1.4rem;
-    background-color: #e8a207;
+    background-color: #e02007;
     color: white;
     transform: none;
     margin: 0;
@@ -4473,6 +4520,65 @@ a:focus {
     text-transform: uppercase
 }
 
+.whatsapp {
+    position: fixed;
+    z-index: 999999999999999999;
+    right: 50px;
+    bottom: 50px;
+    width: 450px;
+    height: 100px;
+}
+
+.icono {
+    width: 70px;
+    height: 70px;
+    border-radius: 100px;
+    background: #e30613;
+    -webkit-box-shadow: 3px 4px 20px -4px rgb(0 0 0 / 44%);
+    box-shadow: 3px 4px 20px -4px rgb(0 0 0 / 44%);
+    float: right;
+    position: relative;
+    z-index: 99999;
+    margin-top: 12px;
+}
+
+.icono a {
+    display: block;
+    padding: 16px;
+}
+
+.globoinfo {
+    width: 290px;
+    height: 100px;
+    border-radius: 10px;
+    float: right;
+    margin-right: -35px;
+}
+
+.cerrar45 {
+    float: right;
+    margin-top: -35px;
+    font-size: 35px;
+    font-weight: 600;
+    margin-right: -10px;
+    line-height: 20px;
+    width: 80px;
+    height: 50px;
+    position: relative;
+    z-index: 999999999;
+}
+
+.texto45 {
+    background: #fff;
+    border-radius: 10px;
+    -webkit-box-shadow: -5px 4px 20px 1px rgb(0 0 0 / 21%);
+    box-shadow: -5px 4px 20px 1px rgb(0 0 0 / 21%);
+    padding: 25px;
+    padding-right: 25px;
+    line-height: 20px;
+    padding-right: 50px;
+}
+
 @media screen and (min-width: 768px) {
     .page-header {
         padding-top: 6rem;
@@ -5541,8 +5647,8 @@ label {
 }
 
 .btn-primary {
-    border-color: #e8a207;
-    background-color: #e8a207;
+    border-color: #e02007;
+    background-color: #e02007;
     color: #fff;
     box-shadow: none
 }
@@ -5558,8 +5664,8 @@ label {
 
 .btn-primary.disabled,
 .btn-primary:disabled {
-    border-color: #e8a207;
-    background-color: #e8a207;
+    border-color: #e02007;
+    background-color: #e02007;
     color: #fff
 }
 
@@ -5642,7 +5748,7 @@ label {
 
 .btn-outline:hover,
 .btn-outline.focus {
-    border-color: #e8a207;
+    border-color: #e02007;
     background-color: transparent;
     color: #282d3b;
     box-shadow: none
@@ -5657,7 +5763,7 @@ label {
 .btn-outline:not(:disabled):not(.disabled):active,
 .btn-outline:not(:disabled):not(.disabled).active,
 .show>.btn-outline.dropdown-toggle {
-    border-color: #e8a207;
+    border-color: #e02007;
     background-color: transparent;
     color: #282d3b
 }
@@ -5671,8 +5777,8 @@ label {
 
 .btn-outline-secondary:hover,
 .btn-outline-secondary.focus {
-    border-color: #e8a207;
-    background-color: #e8a207;
+    border-color: #e02007;
+    background-color: #e02007;
     color: #fff;
     box-shadow: none
 }

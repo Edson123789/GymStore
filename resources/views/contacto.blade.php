@@ -6,7 +6,7 @@
 
         <div class="row">
             <div class="col-md-8">
-                <h2 class="light-title">Escribenos <strong>ahora</strong></h2>
+                <h2 class="light-title">Escríbenos <strong>ahora</strong></h2>
                 @if(Session::has('success'))
                     <div class="alert alert-primary alert-dismissible fade show" role="alert">
                         {{Session::get('success')}}
@@ -44,7 +44,7 @@
                     </div><!-- End .form-group -->
 
                     <div class="form-group">
-                        <label for="contact-phone">Telefono</label>
+                        <label for="contact-phone">Teléfono</label>
                         <input type="tel" class="form-control" id="contact-phone" name="telefono" placeholder="Ingresa tu telefono" value="{{old('telefono')}}">
                         @if ($errors->has('telefono'))
                             <span class="help-block" style="color: #ff0000">{{ $errors->first('telefono') }}</span><br>
@@ -52,7 +52,7 @@
                     </div><!-- End .form-group -->
 
                     <div class="form-group required-field">
-                        <label for="contact-message">En que podemos ayuarte?</label>
+                        <label for="contact-message">¿En qué podemos ayuarte?</label>
                         <textarea cols="30" rows="1" id="contact-message" class="form-control" name="mensaje" required placeholder="Escribe tu consulta">{{old('mensaje')}}</textarea>
                         @if ($errors->has('mensaje'))
                             <span class="help-block" style="color: #ff0000">{{ $errors->first('mensaje') }}</span><br>
@@ -60,7 +60,7 @@
                     </div><!-- End .form-group -->
 
                     <div class="form-footer">
-                        <button type="submit" class="btn btn-primary" style="background: #232f3e">Enviar</button>
+                        <button type="submit" class="btn btn-primary" style="background: #232f3e; border: transparent;">Enviar</button>
                     </div><!-- End .form-footer -->
                 </form>
             </div><!-- End .col-md-8 -->
@@ -70,24 +70,14 @@
 
                 <div class="contact-info">
                     <div>
-                        <i class="icon-phone"></i>
-                        <p><a href="tel:">0201 203 2032</a></p>
-                        <p><a href="tel:">0201 203 2032</a></p>
-                    </div>
-                    <div>
                         <i class="icon-mobile"></i>
-                        <p><a href="tel:">201-123-3922</a></p>
-                        <p><a href="tel:">302-123-3928</a></p>
+                        <p><a href="tel:">+51 923160484</a></p>
+                        <p>Lun – Vie / 10AM – 8:00PM</p>
                     </div>
                     <div>
                         <i class="icon-mail-alt"></i>
-                        <p><a href="mailto:#">porto@gmail.com</a></p>
-                        <p><a href="mailto:#">porto@portotemplate.com</a></p>
-                    </div>
-                    <div>
-                        <i class="icon-skype"></i>
-                        <p>porto_skype</p>
-                        <p>porto_template</p>
+                        <p><a href="mailto:#">aaqz1508@gmail.com</a></p>
+                        <p><a href="https://www.instagram.com/keep_going_eirl/">Instagran: Keep Going EIRL</a></p>
                     </div>
                 </div><!-- End .contact-info -->
             </div><!-- End .col-md-4 -->

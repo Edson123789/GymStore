@@ -11,7 +11,7 @@
     <!-- Favicon -->
     <!-- <link rel="icon" type="image/x-icon" href="{{asset('assets/images/icons/favicon.ico')}}"> -->
     {!! Html::style('assets/images/icons/favicon.ico') !!}
-    
+
 
     <script type="text/javascript">
         WebFontConfig = {
@@ -125,12 +125,12 @@
                             <a href="#"><i class="icon-home"></i></a>
                             <div class="header-menu">
                                 <ul>
-                                    <li><a href="{{route('contacto')}}">CONTACTO</a></li>
+                                    <li><a style="text-decoration: none;" href="{{route('contacto')}}">CONTACTO</a></li>
                                     @if (!auth::check())
-                                    <li><a href="{{route('login.user')}}">INICIAR SESIÓN</a></li>
+                                    <li><a style="text-decoration: none;" href="{{route('login.user')}}">INICIAR SESIÓN</a></li>
 
                                     @else
-                                    <li><a href="{{route('cuenta')}}">MI CUENTA </a></li>
+                                    <li><a style="text-decoration: none;" href="{{route('cuenta')}}">MI CUENTA </a></li>
                                     <li>
                                         <form method="POST" action="{{route('logout')}}" style="margin-bottom: 0px !important">
                                             @csrf
@@ -158,12 +158,7 @@
                             <a class="search-toggle" role="button"><i class="icon-magnifier"></i></a>
                             {!! Form::open(array('url'=>'productos','method'=>'GET','autocomplete'=>'off','role'=>'search'))!!}
                             <div class="header-search-wrapper">
-
-
                                 <input type="search" class="form-control" placeholder="Buscar producto" name="buscar" required>
-
-
-
                                 <button class="btn" type="submit" type="submit"><i class="icon-magnifier"></i></button>
                             </div><!-- End .header-search-wrapper -->
                             {{Form::close()}}
@@ -260,15 +255,15 @@
                                     ->get();
 
                                 ?>
-                                <a href="category.html" class="sf-with-ul item-primary">Categorías</a>
+                                <a href="#" class="sf-with-ul item-primary">Categorías</a>
                                 <div class="megamenu megamenu-fixed-width">
                                     <div class="row">
                                         <div class="col-lg-8">
                                             <div class="row">
                                                 <div class="col-lg-6">
-                                                    <div class="menu-title">
+                                                    <!-- <div class="menu-title">
                                                         <a href="#">Filtro<span class="tip tip-new">New!</span></a>
-                                                    </div>
+                                                    </div> -->
                                                     <ul>
                                                         @foreach ($categorias as $item)
                                                         <li><a href="{{route('productos.categoria',strtolower($item->titulo))}}"><i class="{{$item->icono}}"></i> {{$item->titulo}}</a></li>
@@ -327,7 +322,7 @@
                         </div><!-- End .col-lg-3 -->
 
                         <div class="col-lg-9">
-                            
+
 
                             <div class="row">
                                 <div class="col-md-5">
@@ -376,7 +371,7 @@
                             </div>
                             <div class="row">
                                 <div class="col-md-5">
-                                <h4 class="widget-title">SUSCRÍBETE</h4>
+                                    <h4 class="widget-title">SUSCRÍBETE</h4>
                                     <form action="#">
                                         <input type="email" class="form-control" placeholder="Correo electrónico" required>
 
@@ -454,6 +449,28 @@
         </div>
     </div>
 
+    <div class="whatsapp">
+        <div class="icono">
+            <a href="https://api.whatsapp.com/send?phone=+51923160484&amp;text=Buen%20d%C3%ADa%20quiero%20solicitar%20mas%20informaci%C3%B3n%20sobre%20los%20servicios%20que%20brindan%20" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 636.32 639.38">
+                    <defs>
+                        <style>
+                            .cls-1 {
+                                fill: #FFFFFF;
+                            }
+                        </style>
+                    </defs>
+                    <g id="Capa_2" data-name="Capa 2">
+                        <g id="Capa_1-2" data-name="Capa 1">
+                            <path class="cls-1" d="M543.61,92.92A314.79,314.79,0,0,0,319.49,0C144.85,0,2.73,142.12,2.66,316.8A316.28,316.28,0,0,0,45,475.2L0,639.38l168-44.06a316.59,316.59,0,0,0,151.4,38.56h.13c174.62,0,316.76-142.13,316.83-316.82A314.9,314.9,0,0,0,543.61,92.92ZM319.49,580.38h-.11a263,263,0,0,1-134-36.71L175.74,538,76.07,564.11l26.61-97.18-6.27-10A262.74,262.74,0,0,1,56.15,316.82C56.21,171.63,174.34,53.51,319.59,53.51A263.37,263.37,0,0,1,582.83,317c-.07,145.2-118.19,263.34-263.34,263.34ZM463.93,383.15c-7.91-4-46.83-23.11-54.09-25.76s-12.54-4-17.81,4-20.45,25.75-25.07,31-9.23,5.94-17.15,2-33.42-12.33-63.66-39.3c-23.53-21-39.42-46.91-44-54.83s0-11.8,3.47-16.16c8.57-10.64,17.15-21.8,19.79-27.08s1.32-9.91-.66-13.87-17.81-42.92-24.41-58.78c-6.42-15.43-12.94-13.35-17.81-13.59-4.61-.23-9.89-.28-15.17-.28s-13.86,2-21.11,9.91-27.71,27.08-27.71,66,28.37,76.61,32.33,81.9,55.82,85.24,135.23,119.53a451.68,451.68,0,0,0,45.13,16.67c19,6,36.22,5.18,49.86,3.14,15.21-2.27,46.84-19.15,53.44-37.64s6.6-34.34,4.62-37.64-7.26-5.29-15.18-9.25Z"></path>
+                        </g>
+                    </g>
+                </svg>
+            </a>
+        </div>
+        
+    </div>
+
     <a id="scroll-top" href="#top" title="Top" role="button"><i class="icon-angle-up"></i></a>
 
     <!-- Plugins JS File -->
@@ -462,7 +479,7 @@
     {!! Html::script('assets/js/plugins.min.js') !!}
     {!! Html::script('assets/js/main.min.js') !!}
     {!! Html::script('assets/js/nouislider.min.j') !!}
-    {!! Html::script('https://checkout.culqi.com/js/v3') !!}
+    <!-- {!! Html::script('https://checkout.culqi.com/js/v3') !!} -->
 
 
 
@@ -470,8 +487,8 @@
     <script src="{{asset('assets/js/bootstrap.bundle.min.js')}}"></script>
     <script src="{{asset('assets/js/plugins.min.js')}}"></script>
     <script src="{{asset('assets/js/main.min.js')}}"></script>
-    <script src="{{asset('assets/js/nouislider.min.js')}}"></script>
-    <script src="https://checkout.culqi.com/js/v3"></script> -->
+    <script src="{{asset('assets/js/nouislider.min.js')}}"></script> -->
+    <script src="https://checkout.culqi.com/js/v3"></script>
 
     @stack('scripts')
 </body>
