@@ -31,7 +31,7 @@
                 <figure>
                     <img src="assets/images/logo-red.png" alt="logo">
                 </figure>
-                <div class="mb-2"></div>
+                <!-- <div class="mb-2"></div>
                 <h2 class="light-title">Nuestro <strong>Equipo</strong> o mas imagenes</h2>
                 <div class="vl">
                     <figure>
@@ -40,7 +40,7 @@
                     <figure>
                         <img src="assets/images/logo-red.png" alt="logo">
                     </figure>
-                </div>
+                </div> -->
                 <div class="mb-4"></div>
             </div>
 
