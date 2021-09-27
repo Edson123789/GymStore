@@ -72,7 +72,7 @@
                     <div>
                         <i class="icon-mobile"></i>
                         <p><a href="tel:">+51 923160484</a></p>
-                        <p>Lun – Vie / 10AM – 8:00PM</p>
+                        <p>Lun – Sab / 8:00AM – 8:00PM</p>
                     </div>
                     <div>
                         <i class="icon-mail-alt"></i>

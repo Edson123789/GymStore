@@ -443,7 +443,8 @@ a:focus {
 }
 
 .header {
-    background-color: #e02007
+    background-color: #ff0800
+    /* ff0800  */
 }
 
 .header .container,
@@ -937,7 +938,7 @@ a:focus {
 
 .cart-dropdown .btn-remove:hover,
 .cart-dropdown .btn-remove:focus {
-    color: #e02007;
+    color: #ff0800;
     box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3)
 }
 
@@ -1130,7 +1131,7 @@ a:focus {
 .header-search .btn:hover,
 .header-search .btn:focus {
     background-color: transparent;
-    color: #e02007
+    color: #ff0800
 }
 
 .header-contact {
@@ -1664,8 +1665,8 @@ a:focus {
 .menu>li:hover>a,
 .menu>li.show>a,
 .menu>li.active>a {
-    border-color: #e02007;
-    color: #e02007
+    border-color: #ff0800;
+    color: #ff0800
 }
 
 .menu.sf-arrows>li.show>a.sf-with-ul::before {
@@ -1839,14 +1840,14 @@ a:focus {
 .menu.menu-vertical>li:hover,
 .menu.menu-vertical>li.show,
 .menu.menu-vertical>li.active {
-    background-color: #e02007
+    background-color: #ff0800
 }
 
 .menu.menu-vertical>li:hover>a,
 .menu.menu-vertical>li.show>a,
 .menu.menu-vertical>li.active>a {
-    border-color: #e02007;
-    background-color: #e02007;
+    border-color: #ff0800;
+    background-color: #ff0800;
     color: #fff
 }
 
@@ -2010,13 +2011,13 @@ a:focus {
 
 .mobile-menu li a:hover,
 .mobile-menu li a:focus {
-    color: #e02007;
+    color: #ff0800;
     text-decoration: none
 }
 
 .mobile-menu li.open>a,
 .mobile-menu li.active>a {
-    color: #e02007
+    color: #ff0800
 }
 
 .mobile-menu li ul {
@@ -2094,7 +2095,7 @@ a:focus {
     left: 0;
     padding-top: .7rem;
     padding-bottom: .7rem;
-    background-color: #e02007;
+    background-color: #ff0800;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     z-index: 1040;
     -webkit-animation-duration: .4s;
@@ -2117,7 +2118,7 @@ a:focus {
 .sticky-header.fixed .menu>li:hover>a,
 .sticky-header.fixed .menu>li.show>a,
 .sticky-header.fixed .menu>li.active>a {
-    color: #e02007;
+    color: #ff0800;
     background-color: #fff
 }
 
@@ -2182,7 +2183,7 @@ a:focus {
 
 .footer .social-icon:hover,
 .footer .social-icon:focus {
-    background-color: #e02007;
+    background-color: #ff0800;
     color: #fff
 }
 
@@ -2210,7 +2211,7 @@ a:focus {
     font-family: 'Shadows Into Light', cursive;
     line-height: 1;
     letter-spacing: .01em;
-    background-color: #e02007;
+    background-color: #ff0800;
     text-align: center
 }
 
@@ -2336,8 +2337,8 @@ a:focus {
 }
 
 .widget-newsletter .btn {
-    border-color: #e02007;
-    background-color: #e02007;
+    border-color: #ff0800;
+    background-color: #ff0800;
     border-radius: 0;
     color: #fff;
     display: inline-block;
@@ -2989,7 +2990,7 @@ a:focus {
     opacity: 0;
     height: unset;
     padding: 1.4rem;
-    background-color: #e02007;
+    background-color: #ff0800;
     color: white;
     transform: none;
     margin: 0;
@@ -4674,6 +4675,10 @@ a:focus {
     content: '\e80a'
 }
 
+.icon-whatsapp::before {
+    content: '\f232'
+}
+
 .icon-down-dir::before {
     content: '\e80b'
 }
@@ -5642,8 +5647,8 @@ label {
 }
 
 .btn-primary {
-    border-color: #e02007;
-    background-color: #e02007;
+    border-color: #ff0800;
+    background-color: #ff0800;
     color: #fff;
     box-shadow: none
 }
@@ -5659,8 +5664,8 @@ label {
 
 .btn-primary.disabled,
 .btn-primary:disabled {
-    border-color: #e02007;
-    background-color: #e02007;
+    border-color: #ff0800;
+    background-color: #ff0800;
     color: #fff
 }
 
@@ -5743,7 +5748,7 @@ label {
 
 .btn-outline:hover,
 .btn-outline.focus {
-    border-color: #e02007;
+    border-color: #ff0800;
     background-color: transparent;
     color: #282d3b;
     box-shadow: none
@@ -5758,7 +5763,7 @@ label {
 .btn-outline:not(:disabled):not(.disabled):active,
 .btn-outline:not(:disabled):not(.disabled).active,
 .show>.btn-outline.dropdown-toggle {
-    border-color: #e02007;
+    border-color: #ff0800;
     background-color: transparent;
     color: #282d3b
 }
@@ -5772,8 +5777,8 @@ label {
 
 .btn-outline-secondary:hover,
 .btn-outline-secondary.focus {
-    border-color: #e02007;
-    background-color: #e02007;
+    border-color: #ff0800;
+    background-color: #ff0800;
     color: #fff;
     box-shadow: none
 }
@@ -7611,8 +7616,8 @@ a:focus {
 }
 
 .btn-product {
-    background-color: #e02007;
-    border-color: #e02007;
+    background-color: #ff0800;
+    border-color: #ff0800;
     text-decoration: none;
 }
 
@@ -11210,7 +11215,7 @@ tbody .product-col {
 }
 
 .vl {
-    border-left: 3px solid #e02007;
+    border-left: 3px solid #ff0800;
     height: auto;
 }
 

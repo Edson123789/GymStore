@@ -9,8 +9,10 @@
     <title>Keep Going</title>
 
     <!-- Favicon -->
-    <!-- <link rel="icon" type="image/x-icon" href="{{asset('assets/images/icons/favicon.ico')}}"> -->
-    {!! Html::style('assets/images/icons/favicon.ico') !!}
+   <link rel="icon" type="image/x-icon" href="{{asset('assets/images/icon.png')}}">
+   
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
 
     <script type="text/javascript">
@@ -149,7 +151,9 @@
                 <div class="container">
                     <div class="header-left">
                         <a href="{{route('inicio')}}" class="logo">
-                            <img src="{{asset('config/'.$config->logo)}}" alt="devctheme Logo" width="181" height="51">
+                            <!-- <img src="{{asset('config/'.$config->logo)}}" alt="Logo" width="181" height="51"> -->
+                            <img src="{{asset('assets/images/log.png')}}" alt="Logo" width="300" height="50">
+
                         </a>
                     </div><!-- End .header-left -->
 
@@ -170,8 +174,9 @@
                             <i class="icon-menu"></i>
                         </button>
                         <div class="header-contact">
-                            <span>Llamanos</span>
-                            <a href="tel:#"><strong><i class="icon-phone"></i>{{$config->telefono}}</strong></a>
+                            <span>Contáctanos</span>
+                            <!-- <a href="tel:#"><strong><i class="icon-phone"></i>{{$config->telefono}}</strong></a> -->
+                            <a href="https://api.whatsapp.com/send?phone=+51923160484"><strong><i class="fa fa-whatsapp"></i> {{$config->telefono}}</strong></a>
                         </div><!-- End .header-contact -->
 
 
@@ -303,21 +308,19 @@
                                         <span class="contact-info-label">Dirección:</span><?php echo $config->direccion ?>
                                     </li>
                                     <li>
-                                        <span class="contact-info-label">Teléfono:</span><a href="tel:"><?php echo $config->telefono ?></a>
+                                        <span class="contact-info-label">Teléfono:</span><a href="tel:+51923160484"><?php echo $config->telefono ?></a>
                                     </li>
                                     <li>
-                                        <span class="contact-info-label">Correo:</span> <a href="mailto:mail@example.com"><?php echo $config->correo ?></a>
+                                        <span class="contact-info-label">Correo:</span> <a href="mailto:aaqz1508@gmail.com"><?php echo $config->correo ?></a>
                                     </li>
                                     <li>
                                         <span class="contact-info-label">Atención:</span>
-                                        Lun – Vie / 10AM – 8:00PM
+                                        Lun – Sab / 8:00AM – 8:00PM
                                     </li>
                                 </ul>
                                 <div class="social-icons">
                                     <a href="#" class="social-icon" target="_blank"><i class="icon-facebook"></i></a>
-                                    <a href="#" class="social-icon" target="_blank"><i class="icon-twitter"></i></a>
-                                    <a href="#" class="social-icon" target="_blank"><i class="icon-linkedin"></i></a>
-                                </div><!-- End .social-icons -->
+                                    <a href="#" class="social-icon" target="_blank"><i class="icon-twitter"></i></a>                                </div><!-- End .social-icons -->
                             </div><!-- End .widget -->
                         </div><!-- End .col-lg-3 -->
 
@@ -340,7 +343,7 @@
                                                 <ul class="links">
                                                     <li><a href="{{route('carrito')}}"><i class="icon-chevron-right"></i>Mi carrito</a></li>
                                                     <li><a href="{{route('productos')}}"><i class="icon-chevron-right"></i>Productos</a></li>
-                                                    <li><a href="{{route('login.user')}}" class="login-link"><i class="icon-chevron-right"></i>Login</a></li>
+                                                    <li><a href="{{route('login.user')}}"><i class="icon-chevron-right"></i>Login</a></li>
                                                 </ul>
                                             </div><!-- End .col-sm-6 -->
                                         </div><!-- End .row -->
@@ -354,8 +357,8 @@
                                         <div class="row">
                                             <div class="col-sm-6">
                                                 <ul class="links">
-                                                    <li><a href="{{route('nosotros')}}"><i class="icon-chevron-right"></i>Historia</a></li>
-                                                    <li><a href="{{route('nosotros')}}"><i class="icon-chevron-right"></i>Misión y Visión</a></li>
+                                                    <li><a href="{{route('nosotros')}}"><i class="icon-chevron-right"></i>Nosotros</a></li>
+                                                    <!-- <li><a href="{{route('nosotros')}}"><i class="icon-chevron-right"></i>Misión y Visión</a></li> -->
                                                     <li><a href="{{route('contacto')}}"><i class="icon-chevron-right"></i>Contacto</a></li>
                                                 </ul>
                                             </div><!-- End .col-sm-6 -->
