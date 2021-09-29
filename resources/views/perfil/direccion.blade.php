@@ -31,7 +31,7 @@
                         </div>
                         @endif
 
-                        <!-- <div class="col-lg-12 form-group">
+                        <div class="col-lg-12 form-group">
                             <label><b>Dirección</b></label>
                             <textarea name="direccion" class="form-control" style="min-height: 100px !important;" placeholder="Ingrese su nueva dirección"></textarea>
                         </div>
@@ -42,11 +42,11 @@
                                     <option value="{{$item->name}}">{{$item->name}}</option>
                                 @endforeach
                             </select>
-                        </div> -->
-                        <div class="col-lg-3 col-md-6 form-group">
+                        </div>
+                        <!-- <div class="col-lg-3 col-md-6 form-group">
                             <label><b>País</b></label>
                             <input type="text" class="form-control" placeholder="País" name="pais">
-                        </div>
+                        </div> -->
                         <div class="col-lg-3 col-md-6 form-group">
                             <label><b>Región</b></label>
                             <input type="text" class="form-control" placeholder="Región" name="region">
@@ -81,7 +81,7 @@
                                 <span><b>Ciudad: </b> {{$item->ciudad}}</span><br>
                             </div>
                             <div class="card-footer">
-                                <button class="btn btn-danger btn-sm" style="background: #232f3e !important"
+                                <button class="btn btn-sm" style="background: #232f3e; color:#eee;"
                                 data-toggle="modal" data-target="#modal-{{$item->id}}">
                                     Eliminar
                                 </button>

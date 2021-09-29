@@ -41,7 +41,7 @@
                             <div class="card-product-img" style="background-image: url(assets/images/products/pesas.jpg); ">
                                 <div class="card-body">
                                     <h2 class="card-title-product">Pesas y Mancuernas</h2>
-                                    <p class="card-text-product">Some make up the bulk of the card's content.</p>
+
                                     <a href="#" class="btn btn-product btn-primary" style="text-decoration: none;">Ver más</a>
                                 </div>
                             </div>
@@ -50,7 +50,6 @@
                             <div class="card-product-img" style="background-image: url(assets/images/products/barras.jpg);">
                                 <div class="card-body">
                                     <h2 class="card-title-product">Barras</h2>
-                                    <p class="card-text-product">Some make up the bulk of the card's content.</p>
                                     <a href="#" class="btn btn-product btn-primary" style="text-decoration: none;">Ver más</a>
                                 </div>
                             </div>
@@ -59,7 +58,6 @@
                             <div class="card-product-img" style="background-image: url(assets/images/products/dominadas.jpg);">
                                 <div class="card-body">
                                     <h2 class="card-title-product">Barras Dominadas</h2>
-                                    <p class="card-text-product">Some make up the bulk of the card's content.</p>
                                     <a href="#" class="btn btn-product btn-primary" style="text-decoration: none;">Ver más</a>
                                 </div>
                             </div>
@@ -72,7 +70,7 @@
                             <div class="card-product-img" style="background-image: url(assets/images/products/discos.jpg);">
                                 <div class="card-body">
                                     <h2 class="card-title-product">Discos</h2>
-                                    <p class="card-text-product">Some make up the bulk of the card's content.</p>
+
                                     <a href="#" class="btn btn-product btn-primary" style="text-decoration: none;">Ver más</a>
                                 </div>
                             </div>
@@ -81,7 +79,7 @@
                             <div class="card-product-img" style="background-image: url(assets/images/products/trotadoras.jpg);">
                                 <div class="card-body">
                                     <h2 class="card-title-product">Trotadoras</h2>
-                                    <p class="card-text-product">Some make up the bulk of the card's content.</p>
+
                                     <a href="#" class="btn btn-product btn-primary" style="text-decoration: none;">Ver más</a>
                                 </div>
                             </div>
@@ -90,7 +88,7 @@
                             <div class="card-product-img" style="background-image: url(assets/images/products/spinning.jpg);">
                                 <div class="card-body">
                                     <h2 class="card-title-product">Bicicletas Spinning</h2>
-                                    <p class="card-text-product">Some make up the bulk of the card's content.</p>
+
                                     <a href="#" class="btn btn-product btn-primary" style="text-decoration: none;">Ver más</a>
                                 </div>
                             </div>
@@ -103,7 +101,7 @@
                             <div class="card-product-img" style="background-image: url(assets/images/products/rusas.jpg);">
                                 <div class="card-body">
                                     <h2 class="card-title-product">Pesas Rusas</h2>
-                                    <p class="card-text-product">Some make up the bulk of the card's content.</p>
+
                                     <a href="#" class="btn btn-product btn-primary" style="text-decoration: none;">Ver más</a>
                                 </div>
                             </div>
@@ -112,7 +110,7 @@
                             <div class="card-product-img" style="background-image: url(assets/images/products/soga.jpg);">
                                 <div class="card-body">
                                     <h2 class="card-title-product">Sogas profesionales</h2>
-                                    <p class="card-text-product">Some make up the bulk of the card's content.</p>
+
                                     <a href="#" class="btn btn-product btn-primary" style="text-decoration: none;">Ver más</a>
                                 </div>
                             </div>
@@ -121,7 +119,7 @@
                             <div class="card-product-img" style="background-image: url(assets/images/products/banco.jpg);">
                                 <div class="card-body">
                                     <h2 class="card-title-product">Banca de Pesas</h2>
-                                    <p class="card-text-product">Some make up the bulk of the card's content.</p>
+
                                     <a href="#" class="btn btn-product btn-primary" style="text-decoration: none;">Ver más</a>
                                 </div>
                             </div>
@@ -134,7 +132,7 @@
                             <div class="card-product-img" style="background-image: url(assets/images/products/matt.jpg);">
                                 <div class="card-body">
                                     <h2 class="card-title-product">Colchonetas</h2>
-                                    <p class="card-text-product">Some make up the bulk of the card's content.</p>
+
                                     <a href="#" class="btn btn-product btn-primary" style="text-decoration: none;">Ver más</a>
                                 </div>
                             </div>
@@ -143,7 +141,7 @@
                             <div class="card-product-img" style="background-image: url(assets/images/products/bandas.jpg);">
                                 <div class="card-body">
                                     <h2 class="card-title-product">Bandas resistencia</h2>
-                                    <p class="card-text-product">Some make up the bulk of the card's content.</p>
+
                                     <a href="#" class="btn btn-product btn-primary" style="text-decoration: none;">Ver más</a>
                                 </div>
                             </div>
@@ -152,7 +150,7 @@
                             <div class="card-product-img" style="background-image: url(assets/images/products/otros.jpg);">
                                 <div class="card-body">
                                     <h2 class="card-title-product">Otros Accesarios</h2>
-                                    <p class="card-text-product">Some make up the bulk of the card's content.</p>
+
                                     <a href="#" class="btn btn-product btn-primary" style="text-decoration: none;">Ver más</a>
                                 </div>
                             </div>

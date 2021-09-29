@@ -68,8 +68,7 @@ class UsuarioController extends Controller
 
     public function direccion(){
 
-        // $paises = json_decode(file_get_contents('https://restcountries.eu/rest/v2/all',true));
-        $paises = 'Peru';
+        $paises = json_decode(file_get_contents('https://restcountries.com/v2/all',true));
         $direcciones = DB::table('direccion')
         ->where('iduser','=',auth()->user()->id)
         ->orderby('id','desc')

@@ -81,10 +81,10 @@ class InicioController extends Controller
     public function productos(Request $request){
 
         $categorias = DB::table('categoria')
-        ->orderby('titulo','asc')
+        ->orderby('id','asc')
         ->get();
 
-        
+
 
         if($request){
             $pmajor=$request->get('pmajor');
@@ -130,6 +130,7 @@ class InicioController extends Controller
                 $features = DB::table('producto')
                 ->get()
                 ->random(3);
+                
             } catch (\Throwable $th) {
                 return view('productos',compact('categorias','productos','buscar','pminor','pmajor'));
             }
@@ -143,7 +144,7 @@ class InicioController extends Controller
     public function productos_by_cat($categoria){
 
         $categorias = DB::table('categoria')
-        ->orderby('titulo','asc')
+        ->orderby('id','asc')
         ->get();
 
         $cat = DB::table('categoria')

@@ -9,10 +9,10 @@
     <title>Keep Going</title>
 
     <!-- Favicon -->
-   <link rel="icon" type="image/x-icon" href="{{asset('assets/images/icon.png')}}">
-   
+    <link rel="icon" type="image/x-icon" href="{{asset('assets/images/icon.png')}}">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> -->
 
 
     <script type="text/javascript">
@@ -31,17 +31,17 @@
     </script>
 
     <!-- Plugins CSS File -->
-    <!-- <link rel="stylesheet" href="{{asset('assets/css/bootstrap.min.css')}}"> -->
-    {!! Html::style('assets/css/bootstrap.min.css') !!}
+    <link rel="stylesheet" href="{{asset('assets/css/bootstrap.min.css')}}">
+    <!-- {!! Html::style('assets/css/bootstrap.min.css') !!} -->
 
     <!-- Main CSS File -->
-    <!-- <link rel="stylesheet" href="{{asset('assets/css/style.min.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/style.min.css')}}">
     <link rel="stylesheet" href="{{asset('css/admin.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('assets/vendor/fontawesome-free/css/all.min.css')}}"> -->
+    <link rel="stylesheet" href="{{asset('assets/vendor/fontaweasome-free/css/all.min.css')}}">
 
-    {!! Html::style('assets/css/style.min.css') !!}
+    <!-- {!! Html::style('assets/css/style.min.css') !!}
     {!! Html::style('css/admin.css') !!}
-    {!! Html::style('assets/vendor/fontawesome-free/css/all.min.css') !!}
+    {!! Html::style('assets/vendor/fontawesome-free/css/all.min.css') !!} -->
 
 </head>
 
@@ -176,7 +176,7 @@
                         <div class="header-contact">
                             <span>Contáctanos</span>
                             <!-- <a href="tel:#"><strong><i class="icon-phone"></i>{{$config->telefono}}</strong></a> -->
-                            <a href="https://api.whatsapp.com/send?phone=+51923160484"><strong><i class="fa fa-whatsapp"></i> {{$config->telefono}}</strong></a>
+                            <a href="https://api.whatsapp.com/send?phone=+51923160484"><strong><i class="fab fa-whatsapp"></i> {{$config->telefono}}</strong></a>
                         </div><!-- End .header-contact -->
 
 
@@ -256,7 +256,7 @@
                                 <?php
 
                                 $categorias = DB::table('categoria')
-                                    ->orderby('titulo', 'asc')
+                                    ->orderby('id', 'asc')
                                     ->get();
 
                                 ?>
@@ -320,7 +320,9 @@
                                 </ul>
                                 <div class="social-icons">
                                     <a href="#" class="social-icon" target="_blank"><i class="icon-facebook"></i></a>
-                                    <a href="#" class="social-icon" target="_blank"><i class="icon-twitter"></i></a>                                </div><!-- End .social-icons -->
+                                    <a href="https://www.instagram.com/keep_going_eirl/" class="social-icon" target="_blank"><i class="icon-instagram"></i></a>
+                                    <a href="https://api.whatsapp.com/send?phone=+51923160484" class="social-icon" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                                </div><!-- End .social-icons -->
                             </div><!-- End .widget -->
                         </div><!-- End .col-lg-3 -->
 
@@ -414,7 +416,7 @@
                         <ul>
 
                             @foreach ($categorias as $item)
-                            <li><a href="{{route('productos.categoria',strtolower($item->titulo))}}"><i class="{{$item->icono}}"></i> {{$item->titulo}}</a></li>
+                            <li><a style="text-decoration: none;" href="{{route('productos.categoria',strtolower($item->titulo))}}"><i class="{{$item->icono}}"></i> {{$item->titulo}}</a></li>
                             @endforeach
                         </ul>
                     </li>
@@ -429,8 +431,8 @@
 
             <div class="social-icons">
                 <a href="#" class="social-icon" target="_blank"><i class="icon-facebook"></i></a>
-                <a href="#" class="social-icon" target="_blank"><i class="icon-twitter"></i></a>
-                <a href="#" class="social-icon" target="_blank"><i class="icon-instagram"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=+51923160484" class="social-icon" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/keep_going_eirl/" class="social-icon" target="_blank"><i class="icon-instagram"></i></a>
             </div><!-- End .social-icons -->
         </div><!-- End .mobile-menu-wrapper -->
     </div><!-- End .mobile-menu-container -->
@@ -471,7 +473,7 @@
                 </svg>
             </a>
         </div>
-        
+
     </div>
 
     <a id="scroll-top" href="#top" title="Top" role="button"><i class="icon-angle-up"></i></a>
@@ -481,7 +483,7 @@
     {!! Html::script('assets/js/bootstrap.bundle.min.js') !!}
     {!! Html::script('assets/js/plugins.min.js') !!}
     {!! Html::script('assets/js/main.min.js') !!}
-    {!! Html::script('assets/js/nouislider.min.j') !!}
+    {!! Html::script('assets/js/nouislider.min.js') !!}
     <!-- {!! Html::script('https://checkout.culqi.com/js/v3') !!} -->
 
 
