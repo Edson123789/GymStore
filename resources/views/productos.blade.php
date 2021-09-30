@@ -24,8 +24,8 @@
 
 
                 <div class="row row-sm">
-
-                    @foreach ($productos as $item)
+                    
+                    @foreach ($producto as $item)
                     <div class="col-6 col-md-4">
                         <div class="product-default">
                             <figure>
