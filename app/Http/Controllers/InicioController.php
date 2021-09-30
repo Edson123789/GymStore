@@ -86,16 +86,16 @@ class InicioController extends Controller
             ->orderby('id', 'asc')
             ->get();
 
-        $producto = DB::table('producto')
-            ->orderby('idcategoria', 'asc')
-            ->get();
 
         if ($request) {
             $pmajor = $request->get('pmajor');
             $pminor = $request->get('pminor');
             $buscar = $request->get('buscar');
             $marca = $request->get('marca');
-
+            
+            // $productos = DB::table('producto')
+            // ->orderby('idcategoria', 'asc')
+            // ->get();
 
             if ($pmajor != '' && $pminor != '') {
                 $buscar = $request->get('buscar');
@@ -123,7 +123,8 @@ class InicioController extends Controller
                         ['titulo', 'LIKE', '%' . $buscar . '%'],
                         ['titulo', 'LIKE', '%' . $marca . '%']
                     ])
-                    ->orderby('id', 'desc')
+                    // ->orderby('id', 'desc')
+                    ->orderby('idcategoria', 'asc')
                     ->paginate(15);
             }
             try {
@@ -133,8 +134,7 @@ class InicioController extends Controller
             } catch (\Throwable $th) {
                 return view('productos', compact('categorias', 'productos', 'buscar', 'pminor', 'pmajor'));
             }
-
-            return view('productos', compact('categorias', 'productos', 'buscar', 'pminor', 'pmajor', 'features', 'producto'));
+            return view('productos', compact('categorias', 'productos', 'buscar', 'pminor', 'pmajor', 'features'));
         }
     }
 
@@ -168,7 +168,7 @@ class InicioController extends Controller
         }
 
 
-        return view('productos', compact('categorias', 'productos', 'pminor', 'pmajor', 'features'));
+        return view('productos', compact('categorias', 'productos', 'pminor', 'pmajor', 'features',));
     }
 
     public function producto_detalle($slug)
