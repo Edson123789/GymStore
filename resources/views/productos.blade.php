@@ -132,7 +132,7 @@
 
 
 
-                    <div class="widget">
+                    <!-- <div class="widget">
                         <h3 class="widget-title">
                             <a data-toggle="collapse" href="#widget-body-4" role="button" aria-expanded="true" aria-controls="widget-body-4">MARCAS</a>
                         </h3>
@@ -149,7 +149,7 @@
                                 </ul>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
                     <!-- <div class="widget">
                         <h3 class="widget-title">

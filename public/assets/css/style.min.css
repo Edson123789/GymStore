@@ -1003,12 +1003,12 @@ a:focus {
     display: none;
     position: relative;
     align-items: stretch;
-    width: 100%;
+    width: 70%;
     min-width: 250px;
     border: 1px solid #dbe0e2;
     border-radius: 20px;
     background-color: #fff;
-    overflow: visible
+    overflow: visible;
 }
 
 .header-search .header-search-wrapper::after {
@@ -1140,7 +1140,7 @@ a:focus {
     letter-spacing: 0;
     font-size: 1.8rem;
     line-height: 1.4;
-    padding-right: 3.6rem;
+    padding-right: 2rem;
     margin-right: 3.2rem
 }
 

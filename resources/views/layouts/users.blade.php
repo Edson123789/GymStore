@@ -127,6 +127,7 @@
                             <a href="#"><i class="icon-home"></i></a>
                             <div class="header-menu">
                                 <ul>
+                                    <!-- <li>ENVÍOS A TODO EL PERÚ! <i class="fas fa-truck"></i> 24 A 48 HORAS</li> -->
                                     <li><a style="text-decoration: none;" href="{{route('contacto')}}">CONTACTO</a></li>
                                     @if (!auth::check())
                                     <li><a style="text-decoration: none;" href="{{route('login.user')}}">INICIAR SESIÓN</a></li>
@@ -174,11 +175,14 @@
                             <i class="icon-menu"></i>
                         </button>
                         <div class="header-contact">
-                            <span>Contáctanos</span>
+                            <span><i style="font-size: larger;" class="fab fa-whatsapp"></i> Contáctanos </span>
                             <!-- <a href="tel:#"><strong><i class="icon-phone"></i>{{$config->telefono}}</strong></a> -->
-                            <a href="https://api.whatsapp.com/send?phone=+51923160484"><strong><i class="fab fa-whatsapp"></i> {{$config->telefono}}</strong></a>
+                            <a href="https://api.whatsapp.com/send?phone=+51951217090"><strong> {{$config->telefono}}</strong></a>
                         </div><!-- End .header-contact -->
 
+                        <div class="header-contact">
+                            <span>ENVÍOS A TODO EL PERÚ! <br><i class="fas fa-truck"></i>  24 A 48 HORAS</span>
+                        </div>
 
                         @if (Auth::check())
                         <div class="dropdown cart-dropdown">
@@ -315,13 +319,13 @@
                                     </li>
                                     <li>
                                         <span class="contact-info-label">Atención:</span>
-                                        Lun – Sab / 8:00AM – 8:00PM
+                                        <?php echo $config->horario ?>
                                     </li>
                                 </ul>
                                 <div class="social-icons">
                                     <a href="#" class="social-icon" target="_blank"><i class="icon-facebook"></i></a>
                                     <a href="https://www.instagram.com/keep_going_eirl/" class="social-icon" target="_blank"><i class="icon-instagram"></i></a>
-                                    <a href="https://api.whatsapp.com/send?phone=+51923160484" class="social-icon" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                                    <a href="https://api.whatsapp.com/send?phone=+51951217090" class="social-icon" target="_blank"><i class="fab fa-whatsapp"></i></a>
                                 </div><!-- End .social-icons -->
                             </div><!-- End .widget -->
                         </div><!-- End .col-lg-3 -->
@@ -431,7 +435,7 @@
 
             <div class="social-icons">
                 <a href="#" class="social-icon" target="_blank"><i class="icon-facebook"></i></a>
-                <a href="https://api.whatsapp.com/send?phone=+51923160484" class="social-icon" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=+51951217090" class="social-icon" target="_blank"><i class="fab fa-whatsapp"></i></a>
                 <a href="https://www.instagram.com/keep_going_eirl/" class="social-icon" target="_blank"><i class="icon-instagram"></i></a>
             </div><!-- End .social-icons -->
         </div><!-- End .mobile-menu-wrapper -->
@@ -456,7 +460,7 @@
 
     <div class="whatsapp">
         <div class="icono">
-            <a href="https://api.whatsapp.com/send?phone=+51923160484&amp;text=Buen%20d%C3%ADa%20quiero%20solicitar%20mas%20informaci%C3%B3n%20sobre%20los%20servicios%20que%20brindan%20" target="_blank">
+            <a href="https://api.whatsapp.com/send?phone=+51951217090&amp;text=Buen%20d%C3%ADa%20quiero%20solicitar%20mas%20informaci%C3%B3n%20sobre%20los%20servicios%20que%20brindan%20" target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 636.32 639.38">
                     <defs>
                         <style>

@@ -46,9 +46,11 @@ class InicioController extends Controller
         } catch (\Exception $e) {
             //throw $th;
         }
+        return view('inicio', compact('best','newest', 'hot', 'mejor', 'reco', 'config'));
 
 
-        return view('inicio', compact('best', 'newest', 'hot', 'mejor', 'reco', 'config'));
+        // return view('inicio', compact('best', 'newest', 'hot', 'mejor', 'reco', 'config'));
+        
     }
 
     public function sesion_usuario()
