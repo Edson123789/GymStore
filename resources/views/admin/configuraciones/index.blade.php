@@ -85,7 +85,7 @@
                                             @endif
                                         </div>
                                     </div>
-                                    <!-- <div class="col-lg-12 form-group">
+                                    <div class="col-lg-12 form-group">
                                         <label><b>Enlace de Twitter</b></label>
                                         <div class="input-group mb-2 mr-sm-2">
                                             <div class="input-group-prepend">
@@ -98,7 +98,7 @@
                                                 </span>
                                             @endif
                                         </div>
-                                    </div> -->
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -141,7 +141,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- <div class="col-lg-12 form-group">
+                    <div class="col-lg-12 form-group">
                         <div class="card" style="background: #e8e8e8 !important">
                             <div class="card-header">
                                 <h5 class="card-title">Mensajes de las compras</h5>
@@ -179,7 +179,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div> -->
+                    </div>
                     <div class="col-lg-12">
                         <div class="card" style="background: #e8e8e8 !important">
                             <div class="card-header">
@@ -187,12 +187,12 @@
                             </div>
                             <div class="card-body">
                                 <div class="row">
-                                    <div class="col-lg-6">
+                                    <div class="col-lg-3">
                                         <label><b>Logo</b></label>
                                         <input id="imgInp1" type="file" class="form-control mb-4" name="logo">
                                         <img id="blah1" src="{{asset('config/'.$config->logo)}}" style="width:100%">
                                     </div>
-                                    <!-- <div class="col-lg-3">
+                                    <div class="col-lg-3">
                                         <label><b>Banner 1 - página de inicio</b></label>
                                         <input id="imgInp2" type="file" class="form-control mb-4" name="banner_inicio_uno">
                                         <img id="blah2" src="{{asset('config/'.$config->banner_inicio_uno)}}" style="width:100%">
@@ -201,9 +201,9 @@
                                         <label><b>Banner 2 - página de inicio</b></label>
                                         <input id="imgInp3" type="file" class="form-control mb-4" name="banner_inicio_dos">
                                         <img id="blah3" src="{{asset('config/'.$config->banner_inicio_dos)}}"  style="width:100%">
-                                    </div> -->
-                                    <div class="col-lg-6">
-                                        <label><b>Banner - detalle de producto</b></label>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <label><b>Banner 3 - De detalle de producto</b></label>
                                         <input id="imgInp4" type="file" class="form-control mb-4" name="banner_producto">
                                         <img id="blah4" src="{{asset('config/'.$config->banner_producto)}}"  style="width:100%">
                                     </div>
@@ -212,7 +212,7 @@
                         </div>
                     </div>
 
-                    <!-- <div class="col-lg-8">
+                    <div class="col-lg-8">
                         <div class="card" style="background: #e8e8e8 !important">
                             <div class="card-header">
                                 <h5 class="card-title">Pagos</h5>
@@ -314,7 +314,7 @@
                                 <img src="{{asset('img/culqui.jpg')}}" style="width:100%">
                             </div>
                         </div>
-                    </div> -->
+                    </div>
     
                     <div class="col-lg-12">
                         <button class="btn btn-primary btn-lg" type="submit"><i class="fas fa-pen-alt"></i> Actualizar</button>

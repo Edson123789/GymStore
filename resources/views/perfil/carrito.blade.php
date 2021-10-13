@@ -61,7 +61,7 @@
                                 <td>
                                     {{$item->cantidad}} uni.
                                 </td>
-                                <td class="total_neto">$<?php echo $item->precio_ahora * $item->cantidad ?></td>
+                                <td class="total_neto">S/.<?php echo $item->precio_ahora * $item->cantidad ?></td>
                             </tr>
                             <tr class="product-action-row">
                                 <td colspan="4" class="clearfix">
@@ -236,9 +236,9 @@
                         transactions: [{
                             amount: {
                                 total: '<?php echo $total ?>',
-                                currency: 'USD'
+                                currency: 'PEN'
                             },
-                            description: "Compras en Devcthemes, TOTAL A PAGAR: <?php echo $total ?>USD",
+                            description: "Compras en KEEP GOING, TOTAL A PAGAR: S/.<?php echo $total ?>",
                         }]
                     }
                 });
