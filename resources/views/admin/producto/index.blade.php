@@ -48,13 +48,14 @@
                                 </div>
                                 <div class="col-lg-2">
                                     <div class="btn-group">
-                                        <button type="button" class="btn mb-1 btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <a type="button" style="background-color: #e8a207; border-radius: 3px;" class="dropdown-item" href="{{route('create.producto')}}"><i class="fas fa-archive"></i> Registrar producto</a>
+                                        <!-- <button type="button" class="btn mb-1 btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         Opciones
                                         </button>
                                         <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 31px, 0px);">
                                             <a class="dropdown-item" href="{{route('create.producto')}}"><i class="fas fa-archive"></i> Registrar producto</a>
                                            
-                                        </div>
+                                        </div> -->
                                     </div>
                                 </div>
                             </div>

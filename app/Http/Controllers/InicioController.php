@@ -32,8 +32,9 @@ class InicioController extends Controller
                 ->get();
 
             $mejor = DB::table('producto')
+                ->where('stock', '=', '5')
                 ->orderby('precio_ahora', 'desc')
-                ->take(4)
+                ->take(11)
                 ->get();
 
             $reco = DB::table('producto')
@@ -46,11 +47,11 @@ class InicioController extends Controller
         } catch (\Exception $e) {
             //throw $th;
         }
-        return view('inicio', compact('best','newest', 'hot', 'mejor', 'reco', 'config'));
+        return view('inicio', compact('best', 'newest', 'hot', 'mejor', 'reco', 'config'));
 
 
         // return view('inicio', compact('best', 'newest', 'hot', 'mejor', 'reco', 'config'));
-        
+
     }
 
     public function sesion_usuario()
@@ -94,7 +95,7 @@ class InicioController extends Controller
             $pminor = $request->get('pminor');
             $buscar = $request->get('buscar');
             $marca = $request->get('marca');
-            
+
             // $productos = DB::table('producto')
             // ->orderby('idcategoria', 'asc')
             // ->get();
@@ -127,6 +128,7 @@ class InicioController extends Controller
                     ])
                     // ->orderby('id', 'desc')
                     ->orderby('idcategoria', 'asc')
+                    ->orderby('titulo', 'asc')
                     ->paginate(15);
             }
             try {
@@ -158,7 +160,7 @@ class InicioController extends Controller
             ->where([
                 ['idcategoria', '=', $cat->id],
             ])
-            ->orderby('id', 'desc')
+            ->orderby('titulo', 'asc')
             ->paginate(15);
 
         try {

@@ -79,7 +79,7 @@ sub {
 img {
     display: block;
     max-width: 100%;
-    height: auto
+    height: auto;
 }
 
 @keyframes rotating {
@@ -2579,7 +2579,7 @@ a:focus {
 
 .product-default figure img {
     transition: all .5s;
-    height: auto;
+    height: 300px;
     width: 100%
 }
 
