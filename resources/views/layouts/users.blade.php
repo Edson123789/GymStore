@@ -181,7 +181,7 @@
                         </div><!-- End .header-contact -->
 
                         <div class="header-contact">
-                            <span>ENVÍOS A TODO EL PERÚ! <br><i class="fas fa-truck"></i>  24 A 48 HORAS</span>
+                            <span>ENVÍOS A TODO EL PERÚ! <br><i class="fas fa-truck"></i> 24 A 48 HORAS</span>
                         </div>
 
                         @if (Auth::check())

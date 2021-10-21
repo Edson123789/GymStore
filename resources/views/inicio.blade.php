@@ -454,7 +454,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 offset-lg-1">
-                    <div class="cta-content" >
+                    <div class="cta-content">
                         <h2 style="color: white; font-size: xxx-large;">Si no te reta, no te cambia!</h2>
                         <h3 style="color: white;">Es hora de empezar.</h3>
                     </div>
@@ -505,6 +505,105 @@
         </div><!-- End .container -->
     </div>
     <div class="mb-4"></div><!-- margin -->
+
+
+    <div class="container text-center my-3">
+        <h2 class="carousel-title">Rutinas de Ejercicio</h2>
+        <div class="container mt-4">
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                    <div class="card" style="border-radius: 20px">
+                        <a href="https://www.youtube.com/watch?v=xzECUCrx9dE">
+                            <img src="{{asset('assets/images/rutinas/favpecho.jpg')}}" class="card-img-top" alt="Rutina Pecho">
+                            <div class="card-body">
+                                <h3 class="card-title">Mis Ejercicios de Pecho - Rutina MÁXIMA</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="border-radius: 20px">
+                        <a href="https://www.youtube.com/watch?v=3ms9adhunP8">
+                            <img src="{{asset('assets/images/rutinas/abs.jpg')}}" class="card-img-top" alt="Rutina Abs">
+                            <div class="card-body">
+                                <h3 class="card-title">Rutina de Abdominales en circuito</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="border-radius: 20px">
+                        <a href="https://www.youtube.com/watch?v=fRuOnft3oQY">
+                            <img src="{{asset('assets/images/rutinas/hombros.jpg')}}" class="card-img-top" alt="Rutina Hombros">
+                            <div class="card-body">
+                                <h3 class="card-title">Espalda sin Máquinas - Rutina Practica y Fuerte</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="border-radius: 20px">
+                        <a href="https://www.youtube.com/watch?v=8QhXUFpW2zU">
+                            <img src="{{asset('assets/images/rutinas/piernas.jpg')}}" class="card-img-top" alt="Rutina Piernas">
+                            <div class="card-body">
+                                <h3 class="card-title">Piernas y Gluteos de Acero - Rutina FUERTE!</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container text-center my-3">
+        <div class="container mt-4">
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                    <div class="card" style="border-radius: 20px">
+                        <a href="https://www.youtube.com/watch?v=WZVTwyMPT_c">
+                            <img src="{{asset('assets/images/rutinas/hombrosb.jpg')}}" class="card-img-top" alt="Rutina Hombros">
+                            <div class="card-body">
+                                <h3 class="card-title">Hombros Bestiales con Mancuernas - Rutina completa</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="border-radius: 20px">
+                        <a href="https://www.youtube.com/watch?v=ejMvVV_-NAA">
+                            <img src="{{asset('assets/images/rutinas/piernas2.jpg')}}" class="card-img-top" alt="Rutina Piernas">
+                            <div class="card-body">
+                                <h3 class="card-title">Piernas Enormes - Rutina Alto volumen</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="border-radius: 20px">
+                        <a href="https://www.youtube.com/watch?v=HkBXXPY2qUo">
+                            <img src="{{asset('assets/images/rutinas/pecho.jpg')}}" class="card-img-top" alt="Rutina Pecho">
+                            <div class="card-body">
+                                <h3 class="card-title">Pecho y Triceps - Rutina combinación SPLIT CANDELA!</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="border-radius: 20px">
+                        <a href="https://www.youtube.com/watch?v=o1PQsXC0fiY">
+                            <img src="{{asset('assets/images/rutinas/piernas3.jpg')}}" class="card-img-top" alt="Rutina Piernas">
+                            <div class="card-body">
+                                <h3 class="card-title">Piernas sin Máquinas - Rutina completa</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="mb-5"></div>
 </main><!-- End .main -->
 @endsection
 
