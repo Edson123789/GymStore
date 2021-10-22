@@ -182,6 +182,7 @@
                         <script src="https://www.paypalobjects.com/api/checkout.js"></script>
 
                     </div><!-- End .checkout-methods -->
+                    
                     <button id="buyButton" class="btn btn-primary btn-block" style="padding:10px;border: none;background: #dd0d0d"><i class="fas fa-credit-card"></i> Pagar con tarjeta</button>
                 </div><!-- End .cart-summary -->
             </div><!-- End .col-lg-4 -->

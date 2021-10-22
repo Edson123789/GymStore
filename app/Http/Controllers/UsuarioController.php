@@ -26,13 +26,17 @@ class UsuarioController extends Controller
     public function index(){
 
         $usuario = User::findOrFail(auth()->user()->id);
+        $paises = json_decode(file_get_contents('https://restcountries.com/v2/all',true));
+        $direcciones = DB::table('direccion')
+        ->where('iduser','=',auth()->user()->id)
+        ->orderby('id','desc')
+        ->get();
 
-        return view('perfil.cuenta',compact('usuario'));
+
+        return view('perfil.cuenta',compact('usuario','paises','direcciones'));
     }
 
-    public function editar_perfil(Request $request){
-
-        
+    public function editar_perfil(Request $request){        
         $validator = $request->validate([
             'name'=>'required|min:3| max: 50',
             'fullname'=>'required|min:3| max: 80',
@@ -42,9 +46,15 @@ class UsuarioController extends Controller
             'num_doc'=>'required|min:3| max: 20',
         ]);
 
+        $validator = $request->validate([
+            'direccion'=>'required|min:3| max: 400',
+            'pais'=>'required|min:3| max: 100',
+            'region'=>'required|min:3| max: 100',
+            'ciudad'=>'required|min:3| max: 100',
+            'zip'=>'required|min:2| max: 15',
+        ]);
+
         try {
-            
-    
             $user = User::findOrFail(auth()->user()->id);
             $user->name = $request->get('name');
             $user->fullname = $request->get('fullname');
@@ -56,6 +66,15 @@ class UsuarioController extends Controller
             }
             $user->update();
 
+            $direccion = new Direccion;
+            $direccion->direccion = $request->get('direccion');
+            $direccion->pais = $request->get('pais');
+            $direccion->region = $request->get('region');
+            $direccion->ciudad = $request->get('ciudad');
+            $direccion->zip = $request->get('zip');
+            $direccion->iduser = auth()->user()->id;
+            $direccion->save();
+
             Session::flash('success', 'Se actualizó sus datos de su perfíl');
             return redirect()->back();
 
@@ -63,6 +82,24 @@ class UsuarioController extends Controller
             Session::flash('danger', 'Ocurrió un error al completar el formulario');
             return redirect()->back();
         }
+
+        // try {
+        //     $direccion = new Direccion;
+        //     $direccion->direccion = $request->get('direccion');
+        //     $direccion->pais = $request->get('pais');
+        //     $direccion->region = $request->get('region');
+        //     $direccion->ciudad = $request->get('ciudad');
+        //     $direccion->zip = $request->get('zip');
+        //     $direccion->iduser = auth()->user()->id;
+        //     $direccion->save();
+            
+        //     Session::flash('success', 'Se registro una nueva dirección en su cuenta.');
+        //     return redirect()->back();
+
+        // } catch (\Exception $e) {
+        //     Session::flash('danger', 'Ocurrió un error al completar el formulario.');
+        //     return redirect()->back();
+        // }
 
     }
 
